@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-10.times do |n|
+30.times do |n|
   idea = Idea.new
-  idea.name = "Name#{n}"
-  idea.description = "Description#{n}"
+  idea.name = "Name#{n+1}"
+  idea.description = "Description#{n+1}"
   idea.save!
 end
